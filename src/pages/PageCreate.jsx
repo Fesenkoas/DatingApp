@@ -11,15 +11,21 @@ export const PageCreate = () => {
       <div className="input_group">
         <div className="item">
           <input type="text" required className="input" />
-          <label className="label">First Name</label>
+          <label className="label">First Name*</label>
         </div>
         <div className="item">
           <input type="text" required className="input" />
-          <label className="label">Last Name</label>
+          <label className="label">Last Name*</label>
         </div>
         <div className="item">
-          <input type="data" required className="input" />
-          <label className="label">Date of Birth</label>
+          <div className="item_date">
+            <input type="date" className="input_date" />
+            <label className="label">Date of Birth</label>
+            <div className="item">
+              <input type="text" className="input_age" />
+              <label className="label">Age</label>
+            </div>
+          </div>
         </div>
         <div className="item">
           <input type="text" required className="input" />
