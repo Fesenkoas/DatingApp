@@ -6,14 +6,14 @@ export const SingAccount = () => {
   const navigate = useNavigate();
   //const handleClickLogin = () => {};
   const handleClickCreate = () => {
-    navigate("create");
+    navigate("/create");
   };
   return (
     <>
-      <div className="startpageup">
-        <h1 className="conteiner">CYBERLINK</h1>
+      <div className="start_page_up">
+        <h1 className="logo">CYBERLINK</h1>
       </div>
-      <div className="startpagedown">
+      <div className="start_page_down">
         <button className="down" onClick={handleClickCreate}>
           <h3>Create Account</h3>
         </button>

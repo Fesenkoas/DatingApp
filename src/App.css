@@ -1,14 +1,6 @@
-.conteiner {
+/* Sing Account */
+.logo {
   margin: 400px 0;
-  color: aliceblue;
-  text-align: center;
-}
-.text {
-  color: aliceblue;
-  text-align: center;
-}
-.createAccount {
-  margin: 100px 0 auto;
   color: aliceblue;
   text-align: center;
 }
@@ -20,45 +12,116 @@
   height: 55px;
   background-color: white;
 }
-.down{
-    display: block;
-    margin:  10px auto auto;
-    border-radius: 8px;
-    width: 327px;
-    height: 55px;
-    background-color: black;
-    border: 2px solid white;
-    color: white;
+.down {
+  display: block;
+  margin: 10px auto auto;
+  border-radius: 8px;
+  width: 327px;
+  height: 55px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
 }
-.textsing {
-    text-align: center;
-  }
-
-.startpageup {
+.start_page_up {
+  box-sizing: border-box;
+  left: 0px;
+  top: 0px;
   position: absolute;
   width: 100%;
   height: 562.5px;
-  background: url(./images/skin.png);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/skin.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   border-radius: 0px 0px 40px 40px;
 }
 
-.startpagedown {
+.start_page_down {
   position: absolute;
   width: 100%;
-  height: 241px;
   top: 571px;
   background: #000000;
   border-top: 4px #ffffff solid;
   border-radius: 40px 40px 0px 0px;
 }
+/* Sing Account */
+.text {
+  color: aliceblue;
+  text-align: center;
+}
+.account {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 17px 26px;
+  display: inherit;
+  width: auto;
+}
+/* input {
+  margin: 0 auto;
+  width: 327px;
+  height: 54px;
+}
+.account p {
+  margin-bottom: 0;
+  color: black;
+} */
+.createAccount {
+  margin: 50px 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.textsing {
+  text-align: center;
+}
 
 .natation {
-    margin-top: 50px;
-    color: aliceblue;
-    text-align: center;
-    font-size: 8px;
-  }
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 11px;
+}
+.input_group {
+  display: flex;
+  flex-direction: column;
+  /*for desctop*/
+  /* width: 700px;
+  margin: 0 auto; */
+}
+.item {
+  display: inherit;
+  position: relative;
+  margin-bottom: 25px;
+}
+.label {
+  transform: translate(25px, 15px);
+  position: absolute;
+  color: #000000;
+}
+.input {
+  padding: 5px;
+  margin: 0 auto;
+  width: 327px;
+  height: 54px;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  color: rgb(255, 254, 254);
+  outline: 2px solid rgb(5, 5, 5);
+}
+
+.input:focus + .label,
+input:valid + .label {
+  transform: translate(20px, -25px);
+}
+
+.input:focus + .label,
+.input:valid + .label {
+  color:white;
+  font-size: larger;
+}
+.input:is(:focus, :valid) {
+  color: black;
+}
