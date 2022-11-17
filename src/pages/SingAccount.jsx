@@ -1,6 +1,6 @@
 import React from "react";
-import "../App.css";
 import { useNavigate, Link } from "react-router-dom";
+import style from '../css_modules/singAccount.module.css';
 
 export const SingAccount = () => {
   const navigate = useNavigate();
@@ -10,17 +10,17 @@ export const SingAccount = () => {
   };
   return (
     <>
-      <div className="start_page_up">
-        <h1 className="logo">CYBERLINK</h1>
+      <div className={style.start_page_up}>
+        <h1 className={style.logo}>CYBERLINK</h1>
       </div>
-      <div className="start_page_down">
-        <button className="down" onClick={handleClickCreate}>
+      <div className={style.start_page_down}>
+        <button className={style.btn_create_acc} onClick={handleClickCreate}>
           <h3>Create Account</h3>
         </button>
-        <button className="sing">
-          <h3>Log into account</h3>
+        <button className={style.btn_login}>
+          <h3>Login to account</h3>
         </button>
-        <p className="natation">
+        <p className={style.natation}>
           By tapping “Create Account” or “Log In” you have agrred to our{" "}
           <Link href={"#"} alt={""}>
             TERMS & CONDITIONS

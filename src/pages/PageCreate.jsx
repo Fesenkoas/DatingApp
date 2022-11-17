@@ -1,59 +1,59 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import style from '../css_modules/pageCreate.module.css'
 
 export const PageCreate = () => {
   return (
     <>
-      <div className="createAccount">
+      <div className={style.createAccount}>
         <h1>Create an account</h1>
       </div>
-      <div className="input_group">
-        <div className="item">
-          <input type="text" required className="input" />
-          <label className="label">First Name*</label>
+      <div className={style.input_group}>
+        <div className={style.item}>
+          <input type="text" required className={style.input} />
+          <label className={style.label}>First Name*</label>
         </div>
-        <div className="item">
-          <input type="text" required className="input" />
-          <label className="label">Last Name*</label>
+        <div className={style.item}>
+          <input type="text" required className={style.input} />
+          <label className={style.label}>Last Name*</label>
         </div>
-        <div className="item">
-          <div className="item_date">
-            <input type="date" className="input_date" />
-            <label className="label">Date of Birth</label>
-            <div className="item">
-              <input type="text" className="input_age" />
-              <label className="label">Age</label>
+        <div className={style.item}>
+          <div className={style.item_date}>
+            <input type="date" className={style.input_date} />
+            <label className={style.label}>Date of Birth</label>
+            <div className={style.item}>
+              <input type="text" className={style.input_age} />
+              <label className={style.label}>Age</label>
             </div>
           </div>
         </div>
-        <div className="item">
-          <input type="text" required className="input" />
-          <label className="label">Email*</label>
+        <div className={style.item}>
+          <input type="text" required className={style.input} />
+          <label className={style.label}>Email*</label>
         </div>
-        <div className="item">
-          <input type="password" required className="input" />
-          <label className="label">Password*</label>
+        <div className={style.item}>
+          <input type="password" required className={style.input} />
+          <label className={style.label}>Password*</label>
         </div>
-        <div className="item">
-          <input type="password" required className="input" />
-          <label className="label">Config Password*</label>
+        <div className={style.item}>
+          <input type="password" required className={style.input} />
+          <label className={style.label}>Config Password*</label>
         </div>
       </div>
 
-      <div className="natation">
+      <div className={style.natation}>
         <p>
           Sensitive information are never shared and wont be put on your
           profile.
         </p>
       </div>
-      <div className="text">
+      <div className={style.text}>
         <p>
           Don’t have an account? <Link to={"/"}>Sign up</Link>
         </p>
       </div>
-      <button className="sing">
-        <h3 className="textsing">Create account</h3>
+      <button className={style.btn_create_next}>
+        <h3 className={style.textsing}>Create account</h3>
       </button>
     </>
   );

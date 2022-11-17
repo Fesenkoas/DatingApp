@@ -1,0 +1,26 @@
+.createAccount {
+    margin: 50px 0 auto;
+    color: white;
+    text-align: center;
+  }
+  .btn_google,.btn_email {
+    display: block;
+    margin: 2px auto;
+    border-radius: 8px;
+    width: 327px;
+    height: 50px;
+    background-color: white;
+  }
+  .textsing {
+    text-align: center;
+  }
+  .text {
+    color: aliceblue;
+    text-align: center;
+  }
+  .natation {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+  }

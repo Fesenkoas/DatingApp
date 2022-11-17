@@ -1,0 +1,58 @@
+
+.logo {
+    margin: 400px 0;
+    color: aliceblue;
+    text-align: center;
+  }
+  .start_page_up {
+    box-sizing: border-box;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 562.5px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/skin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 0px 40px 40px;
+    /*for dekstop*/
+    /* background-attachment: fixed; */
+  }
+
+  .start_page_down {
+    position: absolute;
+    width: 100%;
+    top: 571px;
+    background: #000000;
+    border-top: 4px #ffffff solid;
+    border-radius: 40px 40px 0px 0px;
+  }
+
+  .btn_login {
+    display: block;
+    margin: 2px auto;
+    border-radius: 8px;
+    width: 327px;
+    height: 50px;
+    background-color: white;
+  }
+
+  .btn_create_acc {
+    display: block;
+    margin: 10px auto auto;
+    border-radius: 8px;
+    width: 327px;
+    height: 55px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+  }
+
+  .natation {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+  }
