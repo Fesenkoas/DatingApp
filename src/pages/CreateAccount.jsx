@@ -17,9 +17,6 @@ export const CreateAccount = () => {
     <button className="sing">
       <h3 className="textsing">Sing up with Google</h3>
     </button>
-    <button className="sing">
-      <h3 className="textsing">Sing up with Apple</h3>
-    </button>
     <div className="text">
       <h3>or</h3>
     </div>
