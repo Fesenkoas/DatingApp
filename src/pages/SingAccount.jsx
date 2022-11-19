@@ -4,7 +4,9 @@ import style from '../css_modules/singAccount.module.css';
 
 export const SingAccount = () => {
   const navigate = useNavigate();
-  //const handleClickLogin = () => {};
+  const handleClickLogin = () => {
+    navigate("/profile");
+  };
   const handleClickCreate = () => {
     navigate("/create");
   };
@@ -17,7 +19,7 @@ export const SingAccount = () => {
         <button className={style.btn_create_acc} onClick={handleClickCreate}>
           <h3>Create Account</h3>
         </button>
-        <button className={style.btn_login}>
+        <button onClick={handleClickLogin} className={style.btn_login}>
           <h3>Login to account</h3>
         </button>
         <p className={style.natation}>

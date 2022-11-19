@@ -1,0 +1,40 @@
+.logo {
+    letter-spacing: 15px;
+    text-shadow: 2px 3px 1px black, -1px 2px 1px whitesmoke;
+}
+
+.avatar {
+    background-image: url('../images/womanPhoto.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    height: 75vh;
+}
+
+.verified {
+    border-radius: 50px;
+    background-color: rgb(238, 130, 238);
+    width: fit-content;
+}
+
+.avatarLabel {
+    margin-top: 38vh;
+    border-radius: 15px;
+    height: 23vh;
+    background-color: rgb(238, 130, 238, 0.4);
+}
+
+.labelText {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.labelName {
+    font-weight: 600;
+}
+
+.text{
+    height: 8vh;
+    text-align: end;
+}
