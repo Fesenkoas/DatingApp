@@ -1,5 +1,5 @@
 .logo {
-    letter-spacing: 15px;
+    letter-spacing: 15%;
     text-shadow: 2px 3px 1px black, -1px 2px 1px whitesmoke;
 }
 
@@ -12,6 +12,166 @@
     height: 75vh;
 }
 
+@media only screen and (max-width: 380px){
+    .logo{
+        font-size: 1em;
+        letter-spacing: 10px;
+    }
+    .verified{
+        margin-top: 5%;
+    }
+    .avatarLabel{
+        margin-top: 75%;
+    }
+}
+
+@media only screen and (max-height: 740px) and (min-height: 700px){
+    .verified{
+        margin-top: 8%;
+    }
+    .avatarLabel{
+        margin-top: 83%;
+    }
+}
+
+@media only screen and (min-height: 840px){
+    .logo{
+        letter-spacing: 12px;
+    }
+    .verified{
+        margin-top: 15%;
+    }
+    .avatarLabel{
+        margin-top: 80%;
+    }
+}
+
+@media only screen and (min-width: 400px){
+    .verified{
+        margin-top: 15%;
+    }
+    .avatarLabel{
+        margin-top: 80%;
+    }
+}
+
+@media only screen and (min-width: 820px){
+    .logo{
+        margin-top: 1%;
+        font-size: 3.5em;
+        letter-spacing: 10px;
+    }
+    .verified{
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+    .avatarLabel{
+        margin-top: 70%;
+    }
+    .labelText {
+        font-size: 3em;
+    }
+    .sexuality{
+        font-size: 2.5em;
+    }
+    
+    .milesAway{
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-height: 1024px){
+    .logo{
+        margin-top: 1%;
+        font-size: 3.5em;
+        letter-spacing: 10px;
+    }
+    .verified{
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+    .avatarLabel{
+        margin-top: 58%;
+    }
+    .labelText {
+        font-size: 3em;
+    }
+    .sexuality{
+        font-size: 2.5em;
+    }
+    
+    .milesAway{
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-height: 1368px){
+    .logo{
+        margin-top: 1%;
+        font-size: 3.5em;
+        letter-spacing: 10px;
+    }
+    .verified{
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+    .avatarLabel{
+        margin-top: 82%;
+    }
+}
+
+@media only screen and (min-width: 540px) and (min-height: 720px){
+    .logo{
+        margin-top: 2%;
+        font-size: 2em;
+        letter-spacing: 10px;
+    }
+    .verified{
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+    .avatarLabel{
+        margin-top: 55%;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .verified{
+        margin-top: 25%;
+        font-size: 1em;
+    }
+    .avatarLabel{
+        margin-top: 75%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .logo{
+        font-size: 3.5em;
+        letter-spacing: 15px;
+    }
+    .icon{
+        margin-top: 2%;
+    }
+    .verified{
+        margin-top: 3%;
+        font-size: 2em;
+    }
+    .avatarLabel{
+        margin-top: 34%;
+    }
+    .labelText {
+        font-size: 2em;
+    }
+    .sexuality{
+        font-size: 1.5em;
+    }
+    
+    .milesAway{
+        font-size: 1.5em;
+    }
+}
+
 .verified {
     border-radius: 50px;
     background-color: rgb(238, 130, 238);
@@ -19,7 +179,7 @@
 }
 
 .avatarLabel {
-    margin-top: 38vh;
+    position: relative;
     border-radius: 15px;
     height: 23vh;
     background-color: rgb(238, 130, 238, 0.4);
@@ -34,7 +194,13 @@
     font-weight: 600;
 }
 
-.text{
-    height: 8vh;
-    text-align: end;
+.sexuality{
+    position: absolute;
+    bottom: 0;
+}
+
+.milesAway{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
