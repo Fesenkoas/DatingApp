@@ -1,6 +1,36 @@
 .logo {
-    letter-spacing: 15%;
-    text-shadow: 2px 3px 1px black, -1px 2px 1px whitesmoke;
+    width: 100%;
+    height: 90%;
+}
+
+.settings {
+    width: 42%;
+    height: 42%;
+}
+
+.menu {
+    width: 32%;
+    height: 32%;
+}
+
+.footer {
+    border-radius: 15px;
+    height: 10vh;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footerIcon{
+    margin-top: 6%;
+    width: 35%;
+    height: 35%;
+}
+
+.likeDislike{
+    padding-bottom: 8vh;
 }
 
 .avatar {
@@ -8,166 +38,175 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50px;
+    border-radius: 15px;
     height: 75vh;
 }
 
-@media only screen and (max-width: 380px){
-    .logo{
-        font-size: 1em;
-        letter-spacing: 10px;
+@media only screen and (max-width: 820px) {
+    .settings {
+        width: 90%;
+        height: 90%;
     }
-    .verified{
-        margin-top: 5%;
+
+    .menu {
+        width: 90%;
+        height: 90%;
     }
-    .avatarLabel{
-        margin-top: 75%;
+    .footerIcon{
+        margin-top: 15%;
+        width: 55%;
+        height: 55%;
     }
 }
 
-@media only screen and (max-height: 740px) and (min-height: 700px){
-    .verified{
+@media only screen and (max-width: 380px) {
+    .verified {
+        margin-top: 5%;
+    }
+
+    .avatarLabel {
+        margin-top: 72%;
+    }
+}
+
+@media only screen and (max-height: 740px) and (min-height: 700px) {
+    .verified {
         margin-top: 8%;
     }
-    .avatarLabel{
-        margin-top: 83%;
+
+    .avatarLabel {
+        margin-top: 81%;
     }
 }
 
-@media only screen and (min-height: 840px){
-    .logo{
-        letter-spacing: 12px;
-    }
-    .verified{
+@media only screen and (min-height: 840px) {
+    .verified {
         margin-top: 15%;
     }
-    .avatarLabel{
-        margin-top: 80%;
+
+    .avatarLabel {
+        margin-top: 76%;
     }
 }
 
-@media only screen and (min-width: 400px){
-    .verified{
+@media only screen and (min-width: 400px) and (max-width: 420px) {
+    .verified {
         margin-top: 15%;
     }
-    .avatarLabel{
-        margin-top: 80%;
+
+    .avatarLabel {
+        margin-top: 78%;
     }
 }
 
-@media only screen and (min-width: 820px){
-    .logo{
-        margin-top: 1%;
-        font-size: 3.5em;
-        letter-spacing: 10px;
-    }
-    .verified{
+@media only screen and (min-width: 820px) and (min-height: 1180px) {
+    .verified {
         margin-top: 5%;
         font-size: 2.5em;
     }
-    .avatarLabel{
-        margin-top: 70%;
+
+    .avatarLabel {
+        margin-top: 68%;
     }
+
+    .arrowUp {
+        margin-top: 1%;
+        width: 7%;
+        height: 7%;
+    }
+
     .labelText {
         font-size: 3em;
     }
-    .sexuality{
+
+    .sexuality {
         font-size: 2.5em;
     }
-    
-    .milesAway{
+
+    .milesAway {
         font-size: 2.5em;
     }
 }
 
-@media only screen and (min-height: 1024px){
-    .logo{
-        margin-top: 1%;
-        font-size: 3.5em;
-        letter-spacing: 10px;
-    }
-    .verified{
+@media only screen and (min-height: 1024px) and (max-width: 768px) {
+    .verified {
         margin-top: 5%;
-        font-size: 2.5em;
+        font-size: 2em;
     }
-    .avatarLabel{
-        margin-top: 58%;
+
+    .avatarLabel {
+        margin-top: 59%;
     }
+
     .labelText {
-        font-size: 3em;
+        font-size: 2em;
     }
-    .sexuality{
-        font-size: 2.5em;
+
+    .sexuality {
+        font-size: 1.5em;
     }
-    
-    .milesAway{
-        font-size: 2.5em;
+
+    .milesAway {
+        font-size: 1.5em;
     }
 }
 
-@media only screen and (min-height: 1368px){
-    .logo{
-        margin-top: 1%;
-        font-size: 3.5em;
-        letter-spacing: 10px;
-    }
-    .verified{
+@media only screen and (min-height: 1368px) {
+    .verified {
         margin-top: 5%;
         font-size: 2.5em;
     }
-    .avatarLabel{
+
+    .avatarLabel {
         margin-top: 82%;
     }
 }
 
-@media only screen and (min-width: 540px) and (min-height: 720px){
-    .logo{
-        margin-top: 2%;
-        font-size: 2em;
-        letter-spacing: 10px;
-    }
-    .verified{
+@media only screen and (min-width: 540px) and (min-height: 720px) and (max-width: 540px) and (min-height: 720px) {
+    .verified {
         margin-top: 5%;
         font-size: 1.5em;
     }
-    .avatarLabel{
+
+    .avatarLabel {
         margin-top: 55%;
     }
 }
 
-@media only screen and (max-width: 280px){
-    .verified{
+@media only screen and (max-width: 280px) {
+    .verified {
         margin-top: 25%;
         font-size: 1em;
     }
-    .avatarLabel{
-        margin-top: 75%;
+
+    .avatarLabel {
+        margin-top: 68%;
     }
 }
 
-@media only screen and (min-width: 1000px){
-    .logo{
-        font-size: 3.5em;
-        letter-spacing: 15px;
-    }
-    .icon{
+@media only screen and (min-width: 1040px) {
+    .icon {
         margin-top: 2%;
     }
-    .verified{
+
+    .verified {
         margin-top: 3%;
         font-size: 2em;
     }
-    .avatarLabel{
-        margin-top: 34%;
+
+    .avatarLabel {
+        margin-top: 32%;
     }
+
     .labelText {
         font-size: 2em;
     }
-    .sexuality{
+
+    .sexuality {
         font-size: 1.5em;
     }
-    
-    .milesAway{
+
+    .milesAway {
         font-size: 1.5em;
     }
 }
@@ -182,7 +221,7 @@
     position: relative;
     border-radius: 15px;
     height: 23vh;
-    background-color: rgb(238, 130, 238, 0.4);
+    background-color: rgb(238, 130, 238, 0.6);
 }
 
 .labelText {
@@ -194,12 +233,12 @@
     font-weight: 600;
 }
 
-.sexuality{
+.sexuality {
     position: absolute;
     bottom: 0;
 }
 
-.milesAway{
+.milesAway {
     position: absolute;
     bottom: 0;
     right: 0;

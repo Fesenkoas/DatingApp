@@ -3,7 +3,7 @@ import { SingAccount } from './pages/SingAccount';
 import { Routes, Route } from "react-router-dom";
 import { CreateAccount } from './pages/CreateAccount';
 import { PageCreate } from './pages/PageCreate';
-import { ProfileMatching } from './pages/ProfileMatching';
+import { ProfileMatching } from './pages/ProfileMatching/ProfileMatching';
 
 function App() {
   return (
