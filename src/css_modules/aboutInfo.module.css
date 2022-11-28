@@ -1,0 +1,48 @@
+.aboutHeaderContainer{
+    background-color:#242038;
+    border-radius: 15px;
+    margin-bottom: 30%;
+}
+
+.aboutText {
+  padding-left: 5%;  
+}
+
+h1 {
+    color:#725AC1;
+}
+
+.aboutSocial{
+    margin-bottom: 30%;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+.aboutItem {
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    border-radius: 5px;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    color:#725AC1;
+}
+
+.aboutIcon {
+    width: 4vh;
+    height: 4vh;
+}
+
+.aboutIconText {
+    margin: 5px;
+}
+
+.aboutSocialIcon {
+    margin-bottom: 5%;
+    margin-right: 2%;
+}
