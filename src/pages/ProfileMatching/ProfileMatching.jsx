@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutInfo from './AboutInfo';
 import Footer from './Footer';
 import Header from './Header';
 import LikeDislike from './LikeDislike';
@@ -10,6 +11,7 @@ export const ProfileMatching = () => {
             <Header />
             <Profile />
             <LikeDislike />
+            <AboutInfo />
             <Footer />
         </div>
     )
