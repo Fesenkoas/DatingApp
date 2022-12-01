@@ -13,6 +13,54 @@
     height: 32%;
 }
 
+.superLike {
+    display: flex;
+    font-size: 30vh;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: transparent;
+    height: 30vh;
+}
+
+.likeButtonAnimation {
+    animation-name: likeButtonKeyframes;
+    animation-duration: 0.3s;
+}
+
+@keyframes likeButtonKeyframes {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.superLikeClicked {
+    animation-name: superLikeClickedKeyframes;
+    animation-duration: 1.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    color: transparent;
+}
+
+@keyframes superLikeClickedKeyframes {
+    0% {
+        color: transparent
+    }
+    30% {
+        color: #725AC1;;
+    }
+    100%{
+        color: transparent;
+    }
+}
+
+
 .footer {
     border-radius: 15px;
     height: 10vh;
@@ -27,6 +75,11 @@
     margin-top: 6%;
     width: 35%;
     height: 35%;
+}
+
+.profileSuperLike {
+    height: 30%;
+    width: 30%;
 }
 
 .labelName {
@@ -278,7 +331,7 @@
     }
 
     .avatarLabel {
-        margin-top: 65%;
+        margin-top: 62%;
     }
 }
 
