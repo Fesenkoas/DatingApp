@@ -7,7 +7,9 @@ const initialState = {
         avatarAnimation: '',
         verifyAnimation: '',
         avatarLabelAnimation: '',
-        arrowAnimation: ''
+        arrowAnimation: '',
+        superLikeAnimation: '',
+        likeButtonAnimation: ''
     }
 }
 
@@ -28,9 +30,17 @@ const profileSlice = createSlice({
             state.animations.verifyAnimation = style.verifiedAnimationDown;
             state.animations.arrowAnimation = style.arrowDownAnimation;
             state.animations.avatarClosed = false;
+        },
+        superLikeClicked: (state) => {
+            state.animations.superLikeAnimation = style.superLikeClicked;
+            state.animations.likeButtonAnimation = style.likeButtonAnimation;
+        },
+        superLikeDisapear: (state) => {
+            state.animations.superLikeAnimation = '';
+            state.animations.likeButtonAnimation = '';
         }
     }
 })
 
-export const { avatarUp, avatarDown } = profileSlice.actions;
+export const { avatarUp, avatarDown, superLikeClicked, superLikeDisapear } = profileSlice.actions;
 export default profileSlice.reducer;
