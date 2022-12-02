@@ -14,16 +14,13 @@
 }
 
 .superLike {
-    display: flex;
-    font-size: 30vh;
+    font-size: 20vh;
     align-items: center;
     justify-content: center;
-    position: absolute;
     color: transparent;
-    height: 30vh;
 }
 
-.likeButtonAnimation {
+.buttonAnimation {
     animation-name: likeButtonKeyframes;
     animation-duration: 0.3s;
 }
@@ -32,9 +29,11 @@
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(0.8);
     }
+
     100% {
         transform: scale(1);
     }
@@ -52,10 +51,13 @@
     0% {
         color: transparent
     }
+
     30% {
-        color: #725AC1;;
+        color: #725AC1;
+        ;
     }
-    100%{
+
+    100% {
         color: transparent;
     }
 }
@@ -152,6 +154,7 @@
         transform: rotate(180deg);
         top: 10%;
     }
+
     100% {
         transform: rotate(0);
         top: 76vh;
@@ -330,8 +333,8 @@
         margin-top: 5%;
     }
 
-    .avatarLabel {
-        margin-top: 62%;
+    .arrowIcon {
+        margin-top: 5%;
     }
 }
 
@@ -341,7 +344,7 @@
     }
 
     .avatarLabel {
-        margin-top: 78%;
+        margin-top: 5%;
     }
 }
 
@@ -352,7 +355,7 @@
     }
 
     .avatarLabel {
-        margin-top: 83%;
+        margin-top: 5%;
     }
 
     .labelText {
@@ -381,7 +384,7 @@
     }
 
     .avatarLabel {
-        margin-top: 83%;
+        margin-top: 7%;
     }
 
     .likeIcon {
@@ -415,13 +418,27 @@
     }
 
     .avatarLabel {
-        margin-top: 60%;
+        margin-top: 5%;
     }
 
-    .arrowUp {
+    .arrowIcon {
+        width: 8%;
+        height: 8%;
         margin-top: 1%;
-        width: 7%;
-        height: 7%;
+    }
+
+    .footerIcon {
+        width: 50%;
+        height: 50%;
+        margin-top: 12%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 32px;
     }
 
     .labelText {
@@ -445,23 +462,48 @@
 @media only screen and (min-height: 1024px) and (max-width: 768px) {
     .verified {
         margin-top: 5%;
+        font-size: 2.5em;
+    }
+
+    .superLike {
+        height: 30vh;
+    }
+
+    .likeIcon {
+        width: 10vh;
+        height: 10vh;
+    }
+
+    .arrowIcon {
+        width: 6vh;
+        height: 6vh;
+        margin-top: 5%;
+    }
+
+    .footerIcon {
+        width: 60%;
+        height: 60%;
+        margin-top: 5%;
+    }
+
+    p {
         font-size: 2em;
     }
 
-    .avatarLabel {
-        margin-top: 59%;
+    h1 {
+        font-size: 2.5em;
     }
 
     .labelText {
-        font-size: 2em;
+        font-size: 3.5em;
     }
 
     .sexuality {
-        font-size: 1.5em;
+        font-size: 3em;
     }
 
     .milesAway {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 }
 
@@ -497,7 +539,7 @@
     }
 }
 
-@media only screen and (min-width: 540px) and (min-height: 720px) and (max-width: 540px) and (min-height: 720px) {
+@media only screen and (min-width: 540px) and (min-height: 720px) and (max-width: 540px) and (max-height: 720px) {
     .verified {
         margin-top: 5%;
         font-size: 1.5em;

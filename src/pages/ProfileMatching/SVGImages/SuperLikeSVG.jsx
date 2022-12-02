@@ -7,8 +7,8 @@ const SuperLikeSVG = () => {
     const { superLikeAnimation } = useSelector(state => state.profile.animations);
 
     return (
-        <div className={`${style.superLike} col-lg-7 col-11`}>
-            <div className={`${superLikeAnimation} pb-3`}>{'🎔'}</div>
+        <div className={`${style.superLike} ${superLikeAnimation} row text-center`}>
+            <div className={`pb-3 col-12`}>{'🎔'}</div>
         </div>
     )
 }

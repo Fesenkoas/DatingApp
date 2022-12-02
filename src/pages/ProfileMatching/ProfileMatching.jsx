@@ -1,17 +1,18 @@
 import React from 'react'
-import AboutInfo from './AboutInfo';
+import { Route, Routes } from 'react-router-dom';
 import Footer from './Footer';
 import Header from './Header';
-import LikeDislike from './LikeDislike';
-import Profile from './Profile';
+import MatchedScreen from './MatchedScreen';
+import Matcher from './Matcher';
 
 export const ProfileMatching = () => {
     return (
         <div className='container'>
             <Header />
-            <Profile />
-            <LikeDislike />
-            <AboutInfo />
+            <Routes>
+                <Route path='matcher' element={<Matcher />} />
+                <Route path='matched' element={<MatchedScreen />} />
+            </Routes>
             <Footer />
         </div>
     )

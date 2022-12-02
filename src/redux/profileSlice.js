@@ -9,7 +9,8 @@ const initialState = {
         avatarLabelAnimation: '',
         arrowAnimation: '',
         superLikeAnimation: '',
-        likeButtonAnimation: ''
+        likeButtonAnimation: '',
+        dislikeButtonAnimation: ''
     }
 }
 
@@ -31,13 +32,23 @@ const profileSlice = createSlice({
             state.animations.arrowAnimation = style.arrowDownAnimation;
             state.animations.avatarClosed = false;
         },
-        superLikeClicked: (state) => {
-            state.animations.superLikeAnimation = style.superLikeClicked;
-            state.animations.likeButtonAnimation = style.likeButtonAnimation;
+        superLikeClicked: (state, action) => {
+            if (action.payload == 'LIKE') {
+                if (!state.animations.avatarClosed) {
+                    state.animations.superLikeAnimation = style.superLikeClicked;
+                }
+                state.animations.likeButtonAnimation = style.buttonAnimation;
+            } else {
+                state.animations.dislikeButtonAnimation = style.buttonAnimation;
+            }
         },
-        superLikeDisapear: (state) => {
-            state.animations.superLikeAnimation = '';
-            state.animations.likeButtonAnimation = '';
+        superLikeDisapear: (state, action) => {
+            if (action.payload == "LIKE") {
+                state.animations.superLikeAnimation = '';
+                state.animations.likeButtonAnimation = '';
+            } else {
+                state.animations.dislikeButtonAnimation = '';
+            }
         }
     }
 })

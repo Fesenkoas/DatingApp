@@ -19,6 +19,7 @@ h1 {
 .aboutContainer {
     display: flex;
     flex-wrap: wrap;
+    height: fit-content;
     margin: 5%;
 }
 
@@ -34,8 +35,8 @@ h1 {
 }
 
 .aboutIcon {
-    width: 4vh;
-    height: 4vh;
+    width: 3vh;
+    height: 3vh;
 }
 
 .aboutIconText {

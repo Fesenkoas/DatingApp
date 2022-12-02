@@ -9,9 +9,9 @@ const Like = () => {
     const { likeButtonAnimation } = useSelector(state => state.profile.animations);
 
     const handleLikeClick = () => {
-        dispatch(superLikeClicked());
+        dispatch(superLikeClicked("LIKE"));
         setTimeout(() => {
-            dispatch(superLikeDisapear())
+            dispatch(superLikeDisapear("LIKE"))
         }, 1800);
     }
 

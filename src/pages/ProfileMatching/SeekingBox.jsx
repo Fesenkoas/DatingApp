@@ -5,19 +5,19 @@ import LoveSVG from './SVGImages/LoveSVG'
 
 const SeekingBox = () => {
   return (
-    <div className={style.aboutContainer}>
+      <div className={style.aboutContainer}>
 
-      <div className={style.aboutItem}>
-        <LoveSVG />
-        <p className={style.aboutIconText}>Love</p>
+        <div className={style.aboutItem}>
+          <LoveSVG />
+          <p className={style.aboutIconText}>Love</p>
+        </div>
+
+        <div className={style.aboutItem}>
+          <FriendshipSVG />
+          <p className={style.aboutIconText}>Friendship</p>
+        </div>
+
       </div>
-
-      <div className={style.aboutItem}>
-        <FriendshipSVG />
-        <p className={style.aboutIconText}>Friendship</p>
-      </div>
-
-    </div>
   )
 }
 
