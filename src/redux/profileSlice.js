@@ -32,8 +32,15 @@ const profileSlice = createSlice({
             state.animations.arrowAnimation = style.arrowDownAnimation;
             state.animations.avatarClosed = false;
         },
+        clearAvatarAnimation: (state) => {
+            state.animations.avatarClosed = false;
+            state.animations.avatarAnimation = '';
+            state.animations.verifyAnimation = '';
+            state.animations.arrowAnimation = '';
+            state.animations.avatarLabelAnimation = '';
+        },
         superLikeClicked: (state, action) => {
-            if (action.payload == 'LIKE') {
+            if (action.payload === 'LIKE') {
                 if (!state.animations.avatarClosed) {
                     state.animations.superLikeAnimation = style.superLikeClicked;
                 }
@@ -43,7 +50,7 @@ const profileSlice = createSlice({
             }
         },
         superLikeDisapear: (state, action) => {
-            if (action.payload == "LIKE") {
+            if (action.payload === "LIKE") {
                 state.animations.superLikeAnimation = '';
                 state.animations.likeButtonAnimation = '';
             } else {
@@ -53,5 +60,5 @@ const profileSlice = createSlice({
     }
 })
 
-export const { avatarUp, avatarDown, superLikeClicked, superLikeDisapear } = profileSlice.actions;
+export const { avatarUp, avatarDown, superLikeClicked, superLikeDisapear, clearAvatarAnimation } = profileSlice.actions;
 export default profileSlice.reducer;

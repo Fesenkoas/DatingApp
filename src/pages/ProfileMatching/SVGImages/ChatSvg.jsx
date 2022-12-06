@@ -1,12 +1,16 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import {clearAvatarAnimation} from '../../../redux/profileSlice'
 import style from '../../../css_modules/profileMatching.module.css';
 
 const ChatSvg = () => {
     
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const handleClickChat = () => {
-        navigate('matched');
+        dispatch(clearAvatarAnimation());
+        navigate('chats');
     }
     
     return (
