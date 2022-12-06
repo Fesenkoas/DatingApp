@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Route } from 'react-router-dom';
+//import { Route } from 'react-router-dom';
 import style from '../../css_modules/chats.module.css'
 import { getNames } from '../../redux/chatsSlice';
 import ChatWindow from './ChatWindow';
