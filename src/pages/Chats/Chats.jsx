@@ -12,7 +12,7 @@ const Chats = () => {
     
     useEffect(() => {
         dispatch(getNames());
-    }, [names])
+    }, [dispatch])
     
     
 
