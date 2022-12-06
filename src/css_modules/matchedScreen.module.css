@@ -1,0 +1,209 @@
+.viewport {
+    height: 80vh;
+    border-radius: 15px;
+}
+
+.matchers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+img {
+    height: 40vw;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.rightPhoto {
+    margin-top: 15%;
+}
+
+.heart {
+    font-size: 10vh;
+    position: absolute;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.aboutItem {
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    border-radius: 5px;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    color:#725AC1;
+}
+
+.aboutIcon {
+    width: 3vh;
+    height: 3vh;
+}
+
+.aboutIconText {
+    margin: 5px;
+}
+
+input {
+    border: none;
+    margin: 2%;
+}
+
+::placeholder {
+    color: #725AC1;
+}
+
+.sendIcon {
+    margin: 2%;
+}
+
+.messageInput {
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 420px) {
+    .matchers {
+        margin-top: 40%;
+    }
+
+    .messageInput {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .matchers {
+        margin-top: 38%;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .messageInput {
+        margin-top: 45%;
+    }
+}
+
+@media only screen and (min-height: 844px) {
+    .matchers {
+        margin-top: 35%;
+    }
+
+    .messageInput {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (min-height: 914px) {
+    .matchers {
+        margin-top: 40%;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .messageInput {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (min-height: 740px) and (max-height: 740px) {
+    .matchers {
+        margin-top: 35%;
+    }
+
+    .messageInput {
+        margin-top: 30%;
+    }
+} 
+
+@media only screen and (min-height: 915px) {
+    .matchers {
+        margin-top: 45%;
+    }
+
+    .messageInput {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (min-height: 1024px) {
+    .matchers {
+        margin-top: 15%;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    input {
+        font-size: 2em;
+    }
+
+    .messageInput {
+        margin-top: 8%;
+        height: 10%;
+    }
+
+    .sendIcon {
+        width: 20%;
+        height: 70%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .matchers {
+        margin-top: 5%;
+    }
+
+    .messageInput {
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (min-width: 1180px){
+    img {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .rightPhoto {
+        margin-top: 2%;
+    }
+
+    .messageInput {
+        margin-top: 1%;
+    }
+
+    .viewport {
+        height: 70vh;
+    }
+}

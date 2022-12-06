@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<SingAccount />} />
         <Route path="/create" element={<CreateAccount />} />
         <Route path="/register" element={<PageCreate />} />
-        <Route path="/profile" element={<ProfileMatching />} />
+        <Route path="/profile/*" element={<ProfileMatching />} />
       </Routes>
     </Provider>
   );

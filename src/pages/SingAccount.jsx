@@ -5,7 +5,7 @@ import style from '../css_modules/singAccount.module.css';
 export const SingAccount = () => {
   const navigate = useNavigate();
   const handleClickLogin = () => {
-    navigate("/profile");
+    navigate("/profile/matcher");
   };
   const handleClickCreate = () => {
     navigate("/create");

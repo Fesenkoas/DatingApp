@@ -9,7 +9,8 @@ const initialState = {
         avatarLabelAnimation: '',
         arrowAnimation: '',
         superLikeAnimation: '',
-        likeButtonAnimation: ''
+        likeButtonAnimation: '',
+        dislikeButtonAnimation: ''
     }
 }
 
@@ -31,16 +32,33 @@ const profileSlice = createSlice({
             state.animations.arrowAnimation = style.arrowDownAnimation;
             state.animations.avatarClosed = false;
         },
-        superLikeClicked: (state) => {
-            state.animations.superLikeAnimation = style.superLikeClicked;
-            state.animations.likeButtonAnimation = style.likeButtonAnimation;
+        clearAvatarAnimation: (state) => {
+            state.animations.avatarClosed = false;
+            state.animations.avatarAnimation = '';
+            state.animations.verifyAnimation = '';
+            state.animations.arrowAnimation = '';
+            state.animations.avatarLabelAnimation = '';
         },
-        superLikeDisapear: (state) => {
-            state.animations.superLikeAnimation = '';
-            state.animations.likeButtonAnimation = '';
+        superLikeClicked: (state, action) => {
+            if (action.payload === 'LIKE') {
+                if (!state.animations.avatarClosed) {
+                    state.animations.superLikeAnimation = style.superLikeClicked;
+                }
+                state.animations.likeButtonAnimation = style.buttonAnimation;
+            } else {
+                state.animations.dislikeButtonAnimation = style.buttonAnimation;
+            }
+        },
+        superLikeDisapear: (state, action) => {
+            if (action.payload === "LIKE") {
+                state.animations.superLikeAnimation = '';
+                state.animations.likeButtonAnimation = '';
+            } else {
+                state.animations.dislikeButtonAnimation = '';
+            }
         }
     }
 })
 
-export const { avatarUp, avatarDown, superLikeClicked, superLikeDisapear } = profileSlice.actions;
+export const { avatarUp, avatarDown, superLikeClicked, superLikeDisapear, clearAvatarAnimation } = profileSlice.actions;
 export default profileSlice.reducer;
