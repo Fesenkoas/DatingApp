@@ -11,7 +11,7 @@ const Chats = () => {
 
     useEffect(() => {
         dispatch(getNames());
-    }, [])
+    })
     
     const { names } = useSelector(state => state.chats);
 

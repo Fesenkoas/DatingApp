@@ -2,7 +2,7 @@ import React from 'react'
 import ChatPhoto from '../ProfileMatching/SVGImages/ChatPhoto'
 import style from '../../css_modules/chats.module.css'
 
-const ChatWindow = ({ name, index }) => {
+const ChatWindow = ({ name }) => {
     return (
         <div className={`${style.chatBox} col-12`}>
             <ChatPhoto />
