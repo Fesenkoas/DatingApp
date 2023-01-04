@@ -1,25 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-class Chat {
-    constructor(name, matched) {
-        this.name = name;
-        this.matched = matched;
-        if (matched) {
-            this.messages = [];
-        } else {
-            this.messages = ['Hello', 'How are you?'];
-        }
-    }
-    getName = () => {
-        return this.name;
-    }
-    getMatched = () => {
-        return this.matched;
+const createChat = (name, matched) => {
+    let messages = [];
+    if(!matched) messages = ['Hello', 'How are you?'];
+    return {
+        name: name,
+        matched: matched,
+        messages: messages
     }
 }
 
 const initialState = {
-    userChats: [new Chat('John', true), new Chat('Xavier', false), new Chat('Fernando', false), new Chat('Alex', true), new Chat('Diana', true), new Chat('Anna', false)],
+    userChats: [createChat('John', true), createChat('Xavier', false), createChat('Fernando', false), createChat('Alex', true), createChat('Diana', true), createChat('Anna', false)],
     names: []
 }
 
@@ -30,11 +22,16 @@ const ChatsSlice = createSlice({
         getNames: (state) => {
             state.names = [];
             for (let i = 0; i < state.userChats.length; i++) {
-                state.names.push(state.userChats[i].getName());
+                state.names.push(state.userChats[i].name);
             }
+        },
+        sendMessage: (state, action) => {
+            const index = action.payload.index;
+            if(state.userChats[index].matched) state.userChats[index].matched = false;
+            state.userChats[index].messages.push(action.payload.message);
         }
     }
 });
 
-export const { getNames } = ChatsSlice.actions;
+export const { getNames, sendMessage } = ChatsSlice.actions;
 export default ChatsSlice.reducer;

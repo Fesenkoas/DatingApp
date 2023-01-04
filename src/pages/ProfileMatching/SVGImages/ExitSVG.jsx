@@ -9,7 +9,7 @@ const ExitSVG = () => {
     const dispatch = useDispatch();
 
     const handleExitClick = () => {
-        navigate('/profile/matcher');
+        navigate('/profile/chats');
         dispatch(clearAvatarAnimation());
     }
     
