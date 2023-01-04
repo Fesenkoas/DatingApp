@@ -7,7 +7,8 @@ import ChatWindow from './ChatWindow';
 const Chats = () => {
 
     const dispatch = useDispatch();
-
+    const { names } = useSelector(state => state.chats);
+    
     useEffect(() => {
         dispatch(getNames());
     }, [dispatch]);
