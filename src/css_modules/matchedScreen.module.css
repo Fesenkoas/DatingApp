@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20%;
 }
 
 img {
@@ -40,6 +39,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     height: fit-content;
+    margin-bottom: 16%;
 }
 
 .aboutItem {
@@ -84,20 +84,12 @@ input {
 }
 
 @media only screen and (min-width: 400px) and (max-width: 420px) {
-    .matchers {
-        margin-top: 40%;
-    }
-
     .messageInput {
         margin-top: 40%;
     }
 }
 
 @media only screen and (max-width: 280px) {
-    .matchers {
-        margin-top: 38%;
-    }
-
     p {
         font-size: 0.8em;
     }
@@ -108,20 +100,12 @@ input {
 }
 
 @media only screen and (min-height: 844px) {
-    .matchers {
-        margin-top: 35%;
-    }
-
     .messageInput {
         margin-top: 40%;
     }
 }
 
 @media only screen and (min-height: 914px) {
-    .matchers {
-        margin-top: 40%;
-    }
-
     p {
         font-size: 1.2em;
     }
@@ -132,30 +116,18 @@ input {
 }
 
 @media only screen and (min-height: 740px) and (max-height: 740px) {
-    .matchers {
-        margin-top: 35%;
-    }
-
     .messageInput {
         margin-top: 30%;
     }
 } 
 
 @media only screen and (min-height: 915px) {
-    .matchers {
-        margin-top: 45%;
-    }
-
     .messageInput {
         margin-top: 40%;
     }
 }
 
 @media only screen and (min-height: 1024px) {
-    .matchers {
-        margin-top: 15%;
-    }
-
     h1 {
         font-size: 5em;
     }
@@ -180,10 +152,6 @@ input {
 }
 
 @media only screen and (min-width: 768px){
-    .matchers {
-        margin-top: 5%;
-    }
-
     .messageInput {
         margin-top: 2%;
     }

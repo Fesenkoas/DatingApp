@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-//import { Route } from 'react-router-dom';
 import style from '../../css_modules/chats.module.css'
 import { getNames } from '../../redux/chatsSlice';
 import ChatWindow from './ChatWindow';
@@ -12,15 +11,15 @@ const Chats = () => {
     
     useEffect(() => {
         dispatch(getNames());
-    }, [dispatch])
-    
-    
+    }, [dispatch]);
+
+    const { names } = useSelector(state => state.chats);
 
     return (
         <div>
             <h1 className='text-white'>Chats</h1>
             <div className={style.chatsContainer}>
-                {names.map((name, index) => <ChatWindow name={name} index={index} />)}
+                {names.map((name, index) => <ChatWindow name={name} index={index} key={`${name} ${index}`} />)}
             </div>
         </div>
     )
